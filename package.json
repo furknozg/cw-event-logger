@@ -4,7 +4,7 @@
   "description": "Event Logging For Codeway Applications",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js -r ./.env.dev"
+    "start": "node ./src/index.js -r ./.env"
   },
   "repository": {
     "type": "git",
