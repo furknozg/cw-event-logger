@@ -6,6 +6,7 @@ const pubsubClient = new PubSub({
   projectId: environ.GCLOUD_PROJECT,
 });
 
+console.log(environ.PUBSUB_TOPIC);
 const eventTopic = pubsubClient.topic(environ.PUBSUB_TOPIC);
 
 exports.publish = async function (event) {
