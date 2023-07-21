@@ -1,0 +1,31 @@
+{
+  "name": "cw-event-logger",
+  "version": "1.0.0",
+  "description": "Event Logging For Codeway Applications",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js -r ./.env.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furknozg/cw-event-logger.git"
+  },
+  "keywords": [
+    "log",
+    "BigQuery",
+    "DataFlow",
+    "PubSub"
+  ],
+  "author": "Furkan Özgültekin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furknozg/cw-event-logger/issues"
+  },
+  "homepage": "https://github.com/furknozg/cw-event-logger#readme",
+  "dependencies": {
+    "@google-cloud/pubsub": "^3.7.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "winston": "^3.10.0"
+  }
+}
