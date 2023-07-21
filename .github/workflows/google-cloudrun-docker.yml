@@ -24,7 +24,6 @@ env:
     PROJECT_ID: ${{ secrets.PROJECT_ID }}
     RUN_REGION: us-central1
     SERVICE_NAME: cw-pubquery-service
-    GITHUB_SHA: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
 
 jobs:
     setup-build-deploy:
@@ -41,6 +40,12 @@ jobs:
                   version: '275.0.0'
                   service_account_email: ${{ secrets.SA_EMAIL }}
                   service_account_key: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS}}
+                  
+                  
+            - name: 'Authenticate to Google Cloud'
+              uses: 'google-github-actions/auth@v1'
+              with:
+                    credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
             # Configure gcloud CLI
             - name: Install python 2.7
