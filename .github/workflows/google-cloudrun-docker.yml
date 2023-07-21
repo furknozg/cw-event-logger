@@ -42,6 +42,10 @@ jobs:
                   service_account_key: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS}}
 
             # Configure gcloud CLI
+            - name: Install python 2.7
+              run: |
+                sudo apt-get install python2.7
+                export CLOUDSDK_PYTHON="/usr/bin/python2"
             - name: gcloud Set up
               run: |
                   gcloud config set project $PROJECT_ID
