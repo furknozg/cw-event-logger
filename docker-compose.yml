@@ -9,5 +9,5 @@ services:
     ports:
       - "8080:8080"
     environment:
-      GCLOUD_PROJECT: cw-event-logger
-      PUBSUB_TOPIC: cw-events
+      - GCLOUD_PROJECT: "cw-event-logger"
+      - PUBSUB_TOPIC: "cw-events"
