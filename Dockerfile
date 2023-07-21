@@ -3,7 +3,10 @@ WORKDIR /usr/app
 
 
 COPY package*.json ./
-RUN npm install --production
-COPY src .
+RUN npm install --only=production
+
+COPY . ./
+
+
 
 CMD ["npm", "run", "start"]
