@@ -23,7 +23,8 @@ on:
 env:
     PROJECT_ID: ${{ secrets.PROJECT_ID }}
     RUN_REGION: us-central1
-    SERVICE_NAME: super-simple-service
+    SERVICE_NAME: cw-pubquery-service
+    GITHUB_SHA: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
 
 jobs:
     setup-build-deploy:
