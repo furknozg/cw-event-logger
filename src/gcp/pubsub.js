@@ -9,7 +9,7 @@ exports.publish = async function (event) {
     projectID,
   });
 
-  const dataBuffer = Buffer.from(JSON.stringify(event));
+  const dataBuffer = Buffer.from(event);
   try {
     const messageId = await pubsubClient
       .topic(environ.PUBSUB_TOPIC)
