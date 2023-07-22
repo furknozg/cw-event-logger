@@ -15,9 +15,14 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  logging.encapsulateRequest(req, (req) => {
-    response = postHandler.handlePubSubPublish(req.body);
-  });
+  try {
+    logging.encapsulateRequest(req, (req) => {
+      response = postHandler.handlePubSubPublish(req.body);
+    });
+    res.sendStatus(200);
+  } catch (err) {
+    res.send(err);
+  }
 });
 
 app.listen(port, () => {
