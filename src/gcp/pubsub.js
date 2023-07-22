@@ -2,14 +2,16 @@ const { PubSub } = require("@google-cloud/pubsub");
 const dotenv = require("dotenv").config();
 const environ = process.env;
 
-const pubsubClient = new PubSub({
-  projectId: environ.GCLOUD_PROJECT,
-});
-
-console.log(environ.PUBSUB_TOPIC);
-const eventTopic = pubsubClient.topic(environ.PUBSUB_TOPIC);
-
 exports.publish = async function (event) {
+  const projectID = environ.GCLOUD_PROJECT;
+
+  const pubsubClient = new PubSub({
+    projectID,
+  });
+
+  console.log(environ.PUBSUB_TOPIC);
+  const eventTopic = pubsubClient.topic(environ.PUBSUB_TOPIC);
+
   console.log(typeof environ.PUBSUB_TOPIC, environ.PUBSUB_TOPIC);
   console.log(typeof eventTopic, eventTopic);
 
