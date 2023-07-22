@@ -9,16 +9,10 @@ exports.publish = async function (event) {
     projectID,
   });
 
-  console.log(environ.PUBSUB_TOPIC);
-  const eventTopic = pubsubClient.topic(environ.PUBSUB_TOPIC);
-
-  console.log(typeof environ.PUBSUB_TOPIC, environ.PUBSUB_TOPIC);
-  console.log(typeof eventTopic, eventTopic);
-
   const dataBuffer = Buffer.from(JSON.stringify(event));
   try {
     const messageId = await pubsubClient
-      .topic(eventTopic)
+      .topic(environ.PUBSUB_TOPIC)
       .publishMessage({ data: dataBuffer });
     console.log(`[INFO: Message ${messageId} published.]`);
   } catch (error) {
