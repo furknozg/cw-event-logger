@@ -19,3 +19,6 @@ or
   docker-compose up -d"
 depending on the version of docker-compose the command may differ to "docker compose"...
 
+To test compose a JSON post request, send it to either to the url given above, or if you're authenticated locally, to localhost:8080/ it may take a little to reflect from pubsub to bigquery but it will.
+You can observe the table on Bigquery at the events dataset on the logs table.
+After the reflection you can use the same endpoint with a get request to observe the analytics.
