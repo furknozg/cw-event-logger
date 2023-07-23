@@ -23,4 +23,4 @@ To test compose a JSON post request, send it to either to the url given above, o
 You can observe the table on Bigquery at the events dataset on the logs table.
 After the reflection you can use the same endpoint with a get request to observe the analytics.
 
-The database is not populated so not much will show, if you desire to do so, make sure it is called the logs table for now (I forgot to set its name as an env variable).
+The database is not populated so not much will show, if you desire to do so and populate it, make sure it is called the logs table for now (I forgot to set its name as an env variable).
