@@ -1,5 +1,6 @@
-const { response } = require("express");
 const pubsub = require("../gcp/pubsub");
+
+const params = {};
 
 exports.handlePubSubPublish = async function (req) {
   try {
@@ -8,6 +9,7 @@ exports.handlePubSubPublish = async function (req) {
       console.log(typeof JSON.stringify(req), JSON.stringify(req));
       response = pubsub.publish(JSON.stringify(req));
     } else throw "Bad Request, JSON expected";
+    // FIX: Thrown error does not escalate to the top level response
 
     await response;
     return response;
