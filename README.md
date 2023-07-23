@@ -28,4 +28,4 @@ The database is not populated so not much will show, if you desire to do so and 
 
 System Architecture:
 
-![SystemArch drawio](https://github.com/furknozg/cw-event-logger/assets/72404454/08ca8406-81bc-4be5-8437-3dd0a7842118)
+![systemArchitecture drawio](https://github.com/furknozg/cw-event-logger/assets/72404454/bea591da-8a3f-4b3e-b243-6ae1b67ab5e5)
