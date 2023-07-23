@@ -13,9 +13,9 @@ See https://cloud.google.com/docs/authentication/getting-started if you want to 
 While running docker locally, you may need to execute the commands inside the dockerfile, I have not done so since I do not test locally with docker but only npm.
 
 To run you will only require to execute: 
-  npm run start
+  "npm run start"
 or
-  docker-compose build
-  docker-compose up -d
+  "docker-compose build;
+  docker-compose up -d"
 depending on the version of docker-compose the command may differ to "docker compose"...
 
