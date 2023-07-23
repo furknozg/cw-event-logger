@@ -24,3 +24,8 @@ You can observe the table on Bigquery at the events dataset on the logs table.
 After the reflection you can use the same endpoint with a get request to observe the analytics.
 
 The database is not populated so not much will show, if you desire to do so and populate it, make sure it is called the logs table for now (I forgot to set its name as an env variable).
+
+
+System Architecture:
+
+![SystemArch drawio](https://github.com/furknozg/cw-event-logger/assets/72404454/08ca8406-81bc-4be5-8437-3dd0a7842118)
