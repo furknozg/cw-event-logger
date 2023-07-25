@@ -30,3 +30,9 @@ The database is not populated so not much will show, if you desire to do so and 
 System Architecture:
 
 ![systemArchitecture drawio](https://github.com/furknozg/cw-event-logger/assets/72404454/bea591da-8a3f-4b3e-b243-6ae1b67ab5e5)
+
+And In the Future Potentially:
+
+![SystemArchFutureProposal drawio](https://github.com/furknozg/cw-event-logger/assets/72404454/cedc9a80-aed0-4187-9e19-2083338fc01a)
+
+Or authentication at a gateway...
