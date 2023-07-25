@@ -27,7 +27,7 @@ After the reflection you can use the same endpoint with a get request to observe
 The database is not populated so not much will show, if you desire to do so and populate it, make sure it is called the logs table for now (I forgot to set its name as an env variable).
 
 
-System Architecture:
+System Architecture (current):
 
 ![systemArchitecture drawio](https://github.com/furknozg/cw-event-logger/assets/72404454/bea591da-8a3f-4b3e-b243-6ae1b67ab5e5)
 
